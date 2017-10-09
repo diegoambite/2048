@@ -4,7 +4,7 @@
 package pr1;
 
 /**
- * @author Pablo Vazquez
+ * @author Pablo Vazquez & Diego Ambite
  *
  */
 public class Cell {
