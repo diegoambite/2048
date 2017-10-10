@@ -2,7 +2,7 @@ package pr1;
 
 /**
  * 
- * @author Pablo y Diego
+ * @author Pablo & Diego
  * 
  * Clas which instance store the current state of a 2048 board and provides the methods to manipulate that state
  *
@@ -22,6 +22,7 @@ public class Board {
 	
 	public Board(int size){
 		boardSize = size;
+		board = new Cell[boardSize][boardSize]; 
 	}
 	
 	/**
