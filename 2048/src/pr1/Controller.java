@@ -16,7 +16,7 @@ public class Controller {
 	private Scanner in;
 	
 	
-	public void run (){
+	public void run(){
 		
 	}
 }

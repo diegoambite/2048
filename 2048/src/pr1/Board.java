@@ -32,7 +32,7 @@ public class Board {
 	 * @param value value which will be settled in the cell on the position pos
 	 */
 	public void setCell(Position pos, int value){
-		
+		this.board[pos.getX()][pos.getY()].setValue(value); 
 	}
 	
 	/**
