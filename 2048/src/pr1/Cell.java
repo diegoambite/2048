@@ -30,6 +30,15 @@ public class Cell {
 	 */
 	public void setValue(int newValue){
 		this.value = newValue;
+		empty = false;
+	}
+	
+	/**
+	 * 
+	 * @return value the value of the cell
+	 */
+	public int getValue() {
+		return value;
 	}
 	
 	/**
@@ -45,6 +54,10 @@ public class Cell {
 		return empty;
 	}
 	
+	public void emptyCell() {
+		empty = true;
+	}
+	
 	/**
 	 * Checks whether a merge is allowed betweena cell and the neighbour cell provided as argumet 
 	 * if it result to merge, implements the merges returning a boolean value to indicate if the merge took place succesfully. 
@@ -53,8 +66,13 @@ public class Cell {
 	 * @return
 	 */
 	public boolean doMerge(Cell neighbour){
-		//not sure just an idea, if the value is the same it can merge so we turn the value of the variable merges to true
-		if (neighbour.value == this.value) return true;
+
+		if (neighbour.getValue() == this.value || neighbour.isEmpty() || this.isEmpty()) {
+			neighbour.setValue(value);
+			emptyCell();
+			return true;
+			
+		}
 		return false;
 	}
 }

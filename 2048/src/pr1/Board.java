@@ -11,7 +11,6 @@ public class Board {
 
 	private Cell[][] board;
 	private int boardSize;
-	MoveResult move = new MoveResult() ;
 	
 	
 	/**
