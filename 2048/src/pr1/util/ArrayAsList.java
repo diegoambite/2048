@@ -8,7 +8,9 @@ public class ArrayAsList {
 // The other methods of this class will not be static .
 // This method is static in order to be similar to the "shuffle () "
 // method of the standard library class "Collections ".
-		
+	private int size;
+	private Object arrayAsList[];
+	
 	public static void shuffle(ArrayAsList list, Random random) {
 			for (int i = list.size(); i > 1; i--) {
 				swap(list.arrayAsList, i - 1, random.nextInt(i));
