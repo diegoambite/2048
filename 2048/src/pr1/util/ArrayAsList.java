@@ -2,6 +2,7 @@ package pr1.util;
 
 import java.util.Random;
 
+//error caused by size and arrayAsList
 
 public class ArrayAsList {
 // The rest of the code for the ArrayAsList class is to be added here.
