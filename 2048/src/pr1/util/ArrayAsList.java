@@ -2,7 +2,6 @@ package pr1.util;
 
 import java.util.Random;
 
-//error caused by size and arrayAsList
 
 public class ArrayAsList {
 // The rest of the code for the ArrayAsList class is to be added here.
@@ -11,6 +10,11 @@ public class ArrayAsList {
 // method of the standard library class "Collections ".
 	private int size;
 	private Object arrayAsList[];
+	
+	public arrayAsList(int lenght) {
+		size = lenght;
+		arrayAsList = new Object[size];
+	}
 	
 	public static void shuffle(ArrayAsList list, Random random) {
 			for (int i = list.size(); i > 1; i--) {
