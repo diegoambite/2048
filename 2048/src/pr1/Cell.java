@@ -12,7 +12,6 @@ public class Cell {
 	private Position pos;
 	private int value = 0;
 	private boolean empty = true;
-	private boolean merges = false;
 	
 	/**
 	 * Constructor of the class Cell
@@ -55,9 +54,7 @@ public class Cell {
 	 */
 	public boolean doMerge(Cell neighbour){
 		//not sure just an idea, if the value is the same it can merge so we turn the value of the variable merges to true
-		if (neighbour.value == this.value){
-			merges = true;
-		}
-		return merges;
+		if (neighbour.value == this.value) return true;
+		return false;
 	}
 }
