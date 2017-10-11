@@ -11,7 +11,7 @@ public class ArrayAsList {
 	private int size;
 	private Object arrayAsList[];
 	
-	public arrayAsList(int lenght) {
+	public ArrayAsList(int lenght) {
 		size = lenght;
 		arrayAsList = new Object[size];
 	}
